@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "accorr"
+version = "0.1.0"
+description = ""
+authors = ["jkschluesener <29309617+jkschluesener@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^2.0.0"
+scipy = "^1.14.0"
+pydantic = "^2.8.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
