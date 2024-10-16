@@ -236,7 +236,7 @@ Using the Fisher Z-Transformation (z-score), this skewed distribution can be tra
 
 ### Computing the attenuation-corrected correlation coefficient
 
-Putting the above together, a mathematical workflow to calculate r_ac:
+Putting the above together, a mathematical workflow to calculate $r_ac$:
 
 $$
 \text{rel}(A, B) = \text{pairwise\_correlations}(A, B)
