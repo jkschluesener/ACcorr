@@ -147,6 +147,8 @@ class accorr:
             pairwise_correlation_a=np.tanh(within_a),
             pairwise_correlation_b=np.tanh(within_b),
             pairwise_correlation_across=np.tanh(across),
+            feature_labels_a=data.feature_labels_a,
+            feature_labels_b=data.feature_labels_b
         )
 
         return out

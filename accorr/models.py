@@ -122,6 +122,8 @@ class ComputeOutput(BaseModel):
         pairwise_correlation_a (np.ndarray): Pairwise correlation of a.
         pairwise_correlation_b (np.ndarray): Pairwise correlation of b.
         pairwise_correlation_across (np.ndarray): Pairwise correlation across a and b.
+        feature_labels_a (np.ndarray): Feature labels of data a
+        feature_labels_b (np.ndarray): Feature labels of data b
     """
 
     model_config = {"arbitrary_types_allowed": True}
@@ -145,4 +147,12 @@ class ComputeOutput(BaseModel):
     )
     pairwise_correlation_across: np.ndarray = Field(
         ..., description="Pairwise correlation across a and b"
+    )
+
+    feature_labels_a: np.ndarray = Field(
+        ..., description="Feature labels of data a"
+    )
+
+    feature_labels_b: np.ndarray = Field(
+        ..., description="Feature labels of data b"
     )
